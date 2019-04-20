@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/download"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autoLink="all"
+                android:gravity="center_horizontal"
+                android:padding="10dp"
+                android:text="@string/team_1"
+                android:textAllCaps="true"
+                android:textColor="@color/text_color"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/zamalek_score"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autoLink="all"
+                android:padding="10dp"
+                android:gravity="center_horizontal"
+                android:text="@string/score"
+                android:textAllCaps="true"
+                android:textColor="@color/text_color"
+                android:textSize="56sp" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp"
+                android:background="@color/background"
+                android:onClick="drawforzamalek"
+                android:text="@string/draw"
+                android:textColor="@color/text_color" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp"
+                android:background="@color/background"
+                android:onClick="winnerforzamalek"
+                android:text="@string/winner"
+                android:textColor="@color/text_color" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp"
+                android:background="@color/background"
+                android:onClick="loserforzamalek"
+                android:text="@string/loser"
+                android:textColor="@color/text_color" />
+
+            <TextView
+                android:id="@+id/zamalek_foul"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autoLink="all"
+                android:textAllCaps="true"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="15dp"
+                android:text="@string/foul_Zamalek"
+                android:textColor="@color/text_color"
+                android:textSize="30sp"
+                android:textStyle="italic" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp"
+                android:background="@color/background"
+                android:onClick="foulforzamalek"
+                android:text="@string/foul"
+                android:textColor="@color/text_color" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="420dp"
+            android:layout_marginTop="16dp"
+            android:background="@color/background" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autoLink="all"
+                android:gravity="center_horizontal"
+                android:text="@string/team_2"
+                android:textAllCaps="true"
+                android:padding="10dp"
+                android:textColor="@color/text_color"
+                android:textSize="25sp"
+
+                />
+
+            <TextView
+                android:id="@+id/ahly_score"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autoLink="all"
+                android:gravity="center_horizontal"
+                android:text="@string/score"
+                android:padding="10dp"
+                android:textAllCaps="true"
+                android:textColor="@color/text_color"
+                android:textSize="56sp" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp"
+                android:background="@color/background"
+                android:onClick="drawforahly"
+                android:text="@string/draw"
+                android:textColor="@color/text_color" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp"
+                android:background="@color/background"
+                android:onClick="winnerforahly"
+                android:text="@string/winner"
+                android:textColor="@color/text_color" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp"
+                android:background="@color/background"
+                android:onClick="loserforahly"
+                android:text="@string/loser"
+                android:textColor="@color/text_color" />
+
+            <TextView
+                android:id="@+id/ahly_foul"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autoLink="all"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="15dp"
+                android:text="@string/foul_ahly"
+                android:textAllCaps="true"
+                android:textColor="@color/text_color"
+                android:textSize="30sp"
+                android:textStyle="italic" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp"
+                android:background="@color/background"
+                android:onClick="foulforahly"
+                android:text="@string/foul"
+                android:textColor="@color/text_color" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:onClick="resetScore"
+        android:text="@string/reset" />
+
+
+</RelativeLayout>
+
+

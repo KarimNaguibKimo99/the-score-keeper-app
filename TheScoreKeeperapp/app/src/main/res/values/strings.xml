@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">The Score Keeper app</string>
+    <string name="team_1">Zamalek</string>
+    <string name="team_2">Ahly</string>
+    <string name="score">0</string>
+    <string name="draw">1 points</string>
+    <string name="reset">Reset</string>
+    <string name="winner">3 points</string>
+    <string name="loser">0 points</string>
+    <string name="foul_Zamalek"> foul zam </string>
+    <string name="foul_ahly"> foul ahly </string>
+    <string name="foul">foul</string>
+</resources>
